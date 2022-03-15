@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Android-Basic</string>
+<!--add  string value-->
+    <string name="nameEditText">Name</string>
+    <string name="sayHelloButton">Say Hello</string>
+    <string name="sayHelloTextView">Hello %1$s</string>
+<!--    make string array -->
+    <string-array name="names">
+        <item>Andrian</item>
+        <item>Reihannudin</item>
+    </string-array>
+</resources>
