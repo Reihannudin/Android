@@ -1,0 +1,72 @@
+##CHALLENGE 1
+Bangun dan jalankan aplikasi
+  - Buat proyek Android baru dari Empty Template.
+  - Buka res/strings.xmlfilenya.
+  - Ubah nilai app_namestring menjadi "My Dice Roller". Nama ini muncul di bilah judul.
+  - Buat emulator untuk perangkat, targetkan versi Android apa pun yang Anda suka, dan jalankan
+    aplikasinya. Perhatikan bagaimana judul aplikasi berubah.
+
+Kirim aplikasi Anda untuk dinilai
+Periksa untuk memastikan aplikasi memiliki hal berikut:
+  - Sebuah Activity yang menampilkan "Hello World" di layar.
+  - Bilah judul yang bertuliskan "My Dice Roller.
+
+##CHALLENGE 2
+Ubah aplikasi
+  - Buka aplikasi DiceRoller. Tambahkan tombol ke aplikasi berlabel "Reset" yang muncul tepat di
+    bawah tombol Roll . Minta tombol itu mengatur ulang tampilan teks hasil ke 0.
+
+    pertanyaan 1
+    Metode mana yang Activity mengembangkan tata letak aplikasi dan membuat tampilannya tersedia sebagai objek?
+    onCreate() (X)
+    setClickListener()
+    setContentView()
+    show()
+
+    Pertanyaan 2
+    Atribut tampilan mana yang Anda gunakan untuk mengatur lebar tampilan sehingga menyesuaikan agar sesuai dengan konten?
+    android:view_width="wrap"
+    android:layout_width="wrap_content" (X)
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+
+
+##CHALLENGE 3
+    Ubah aplikasi
+    Tambahkan tombol Hapus ke aplikasi DiceRoller yang mengembalikan gambar dadu ke gambar kosong.
+
+
+    pertanyaan 1
+    Atribut mana <ImageView>yang menunjukkan gambar sumber yang hanya boleh digunakan di Android Studio?
+    android:srcCompat
+    app:src (X)
+    tools:src
+    tools:sourceImage
+
+    Pertanyaan 2
+    Metode mana yang mengubah sumber daya gambar untuk ImageView kode di Kotlin?
+    setImageResource() (X)
+    setImageURI()
+    setImage()
+    setImageRes()
+
+    pertanyaan 3
+    Apa yang lateinitditunjukkan oleh kata kunci dalam deklarasi variabel dalam kode Kotlin?
+    Variabel tidak pernah diinisialisasi.
+    Variabel hanya diinisialisasi pada waktu proses aplikasi.
+    Variabel secara otomatis diinisialisasi ke null.
+    Variabel akan diinisialisasi nanti. Saya berjanji! (X)
+
+    pertanyaan 4
+    Konfigurasi Gradle mana yang menunjukkan level API terbaru yang digunakan aplikasi Anda untuk diuji?
+    minSdkVersion
+    compileSdkVersion (X)
+    targetSdkVersion
+    testSdkVersion
+
+    pertanyaan 5
+    Anda melihat baris impor dalam kode Anda yang dimulai dengan androidx. Apa artinya ini?
+    Kelas adalah bagian dari perpustakaan Android Jetpack. (X)
+    Kelas berada di pustaka eksternal yang akan dimuat secara dinamis saat aplikasi berjalan.
+    Kelasnya "ekstra" dan opsional untuk kelas Anda.
+    Kelas adalah bagian dari dukungan XML Android.
