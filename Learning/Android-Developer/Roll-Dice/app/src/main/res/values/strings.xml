@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Dice Roller</string>
+    <string name="roll_dice">Roll</string>
+    <string name="roll_count_up">Count Up</string>
+    <string name="roll_reset">Reset</string>
+    <string name="roll_clear">Clear</string>
+</resources>
