@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_training_activity"
+    app:startDestination="@id/createTrainingFragment">
+
+    <fragment
+        android:id="@+id/createTrainingFragment"
+        android:name="udemy.course.android.architecture.navigation.training.CreateTrainingFragment"
+        android:label="CreateTrainingFragment"
+        tools:layout="@layout/fragment_create_training"/>
+</navigation>
