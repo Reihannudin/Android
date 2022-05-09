@@ -1,0 +1,63 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+//    add kapt
+    id 'org.jetbrains.kotlin.kapt'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "udemy.course.android.myapplication"
+        minSdk 28
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+//    main dependency
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+//    add kotlin-coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
+//    add lifecycle-viewmodel
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+//    add lifecycle-livedata
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+//    add lifecycle-compiler
+    kapt 'androidx.lifecycle:lifecycle-compiler:2.2.0'
+//    add retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+//    add okhttp
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+//    add okhttp-logging-interceptor
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+
+//    dependency test
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
