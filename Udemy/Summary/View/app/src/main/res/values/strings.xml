@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Summary Application</string>
+    <string name="desc_calculator_calories">calculate daily average calories with the formula (88.4 + 13.4 x weight in kilograms) + (4.8 x height in centimeters) – (5.68 x age in years).</string>
+    <string name="title_calorie_calculator">Calorie Calculator</string>
+    <string name="result_value">Your average daily calorie is</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

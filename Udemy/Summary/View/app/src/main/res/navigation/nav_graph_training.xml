@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_training"
+    app:startDestination="@id/homeTrainingFragment">
+
+    <fragment
+        android:id="@+id/homeTrainingFragment"
+        android:name="udemy.course.summary.android.app.navigation.training.fragment.HomeTrainingFragment"
+        android:label="fragment_home_training"
+        tools:layout="@layout/fragment_home_training" >
+        <action
+            android:id="@+id/action_homeTrainingFragment_to_calculator_calories"
+            app:destination="@id/calculator_calories" />
+        <action
+            android:id="@+id/action_homeTrainingFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeTrainingFragment_to_privacyPoliceFragment"
+            app:destination="@id/privacyPoliceFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <activity
+        android:id="@+id/calculator_calories"
+        android:name="udemy.course.summary.android.app.bindings.MainFirstBindActivity"
+        android:label="MainFirstBindActivity" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="udemy.course.summary.android.app.navigation.training.fragment.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/action_signUpFragment_to_homeTrainingFragment"
+            app:destination="@id/homeTrainingFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_signUpFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="udemy.course.summary.android.app.navigation.training.fragment.DetailFragment"
+        android:label="DetailFragment" >
+        <action
+            android:id="@+id/action_detailFragment_to_privacyPoliceFragment"
+            app:destination="@id/privacyPoliceFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_detailFragment_to_homeTrainingFragment"
+            app:destination="@id/homeTrainingFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/privacyPoliceFragment"
+        android:name="udemy.course.summary.android.app.navigation.training.fragment.PrivacyPoliceFragment"
+        android:label="PrivacyPoliceFragment" >
+        <action
+            android:id="@+id/action_privacyPoliceFragment_to_homeTrainingFragment"
+            app:destination="@id/homeTrainingFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
+    </fragment>
+</navigation>

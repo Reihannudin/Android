@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_challenge"
+    app:startDestination="@id/navOrderFragment">
+    <fragment
+        android:id="@+id/navInputAddressFragment2"
+        android:name="udemy.course.summary.android.app.navigation.challenge.fragment.NavInputAddressFragment"
+        android:label="NavInputAddressFragment" >
+        <action
+            android:id="@+id/action_navInputAddressFragment2_to_navOrderFragment"
+            app:destination="@id/navOrderFragment" />
+        <action
+            android:id="@+id/action_navInputAddressFragment2_to_navPaymentFragment"
+            app:destination="@id/navPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navOrderFragment"
+        android:name="udemy.course.summary.android.app.navigation.challenge.fragment.NavOrderFragment"
+        android:label="NavOrderFragment" >
+        <action
+            android:id="@+id/action_navOrderFragment_to_navInputAddressFragment2"
+            app:destination="@id/navInputAddressFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/navPaymentFragment"
+        android:name="udemy.course.summary.android.app.navigation.challenge.fragment.NavPaymentFragment"
+        android:label="fragment_nav_payment"
+        tools:layout="@layout/fragment_nav_payment" >
+        <action
+            android:id="@+id/action_navPaymentFragment_to_detailPurcasheFragment"
+            app:destination="@id/detailPurcasheFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPurcasheFragment"
+        android:name="udemy.course.summary.android.app.navigation.challenge.fragment.DetailPurcasheFragment"
+        android:label="fragment_detail_purcashe"
+        tools:layout="@layout/fragment_detail_purcashe" />
+</navigation>
