@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_tmdb"
+    app:startDestination="@id/homeTMDBFragment">
+
+    <fragment
+        android:id="@+id/homeTMDBFragment"
+        android:name="udemy.course.summary.android.myapplication.restapi.training.pt1.application.fragment.HomeTMDBFragment"
+        android:label="HomeTMDBFragment" >
+        <action
+            android:id="@+id/action_homeTMDBFragment_to_tvShowPopularTMDBFragment"
+            app:destination="@id/tvShowPopularTMDBFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeTMDBFragment_to_moviePopularTMDBFragment"
+            app:destination="@id/moviePopularTMDBFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeTMDBFragment_to_artistPopularTMDBFragment"
+            app:destination="@id/artistPopularTMDBFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeTMDBFragment_to_movieOnAirTMDBFragment"
+            app:destination="@id/movieOnAirTMDBFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeTMDBFragment_to_tvShowOnAirTMDBFragment"
+            app:destination="@id/tvShowOnAirTMDBFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeTMDBFragment_to_trendingTMDBFragment"
+            app:destination="@id/trendingTMDBFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviePopularTMDBFragment"
+        android:name="udemy.course.summary.android.myapplication.restapi.training.pt1.application.fragment.detail.popular.movie.MoviePopularTMDBFragment"
+        android:label="MoviePopularTMDBFragment" >
+        <action
+            android:id="@+id/action_moviePopularTMDBFragment_to_homeTMDBFragment"
+            app:destination="@id/homeTMDBFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvShowPopularTMDBFragment"
+        android:name="udemy.course.summary.android.myapplication.restapi.training.pt1.application.fragment.detail.popular.tvshow.TvShowPopularTMDBFragment"
+        android:label="TvShowPopularTMDBFragment" >
+        <action
+            android:id="@+id/action_tvShowPopularTMDBFragment_to_homeTMDBFragment"
+            app:destination="@id/homeTMDBFragment" />
+        <action
+            android:id="@+id/action_tvShowPopularTMDBFragment_to_homeTMDBFragment2"
+            app:destination="@id/homeTMDBFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/artistPopularTMDBFragment"
+        android:name="udemy.course.summary.android.myapplication.restapi.training.pt1.application.fragment.detail.popular.artist.ArtistPopularTMDBFragment"
+        android:label="ArtistPopularTMDBFragment" >
+        <action
+            android:id="@+id/action_artistPopularTMDBFragment_to_homeTMDBFragment"
+            app:destination="@id/homeTMDBFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieOnAirTMDBFragment"
+        android:name="udemy.course.summary.android.myapplication.restapi.training.pt1.application.fragment.detail.onair.movie.MovieOnAirTMDBFragment"
+        android:label="MovieOnAirTMDBFragment" >
+        <action
+            android:id="@+id/action_movieOnAirTMDBFragment_to_homeTMDBFragment"
+            app:destination="@id/homeTMDBFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trendingTMDBFragment"
+        android:name="udemy.course.summary.android.myapplication.restapi.training.pt1.application.fragment.detail.trending.TrendingTMDBFragment"
+        android:label="TrendingTMDBFragment" >
+        <action
+            android:id="@+id/action_trendingTMDBFragment_to_homeTMDBFragment"
+            app:destination="@id/homeTMDBFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvShowOnAirTMDBFragment"
+        android:name="udemy.course.summary.android.myapplication.restapi.training.pt1.application.fragment.detail.onair.tvshow.TvShowOnAirTMDBFragment"
+        android:label="TvShowOnAirTMDBFragment" >
+        <action
+            android:id="@+id/action_tvShowOnAirTMDBFragment_to_homeTMDBFragment"
+            app:destination="@id/homeTMDBFragment" />
+    </fragment>
+</navigation>
