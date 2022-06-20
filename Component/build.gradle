@@ -1,0 +1,53 @@
+plugins {
+    //    application plugin
+    id 'application'
+    id 'org.jetbrains.kotlin.jvm' version '1.7.0'
+//    Serialization plugin
+    id "org.jetbrains.kotlin.plugin.serialization" version "1.7.0"
+}
+
+group = 'udemy.kotlin.ktor.boruto'
+version = '0.0.1'
+
+application{
+    mainClass.set("io.ktor.server.netty.EngineMain")
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.jetbrains.kotlin:kotlin-test'
+
+//    ktor
+    implementation "io.ktor:ktor-server-core:2.0.2"
+    implementation "io.ktor:ktor-server-netty:2.0.2"
+
+//   ktor plugin
+    implementation "io.ktor:ktor-server-cors:2.0.2"
+    implementation "io.ktor:ktor-server:2.0.2"
+
+//    ktor serialization
+    implementation "io.ktor:ktor-serialization:2.0.2"
+    implementation "io.ktor:ktor-serialization-kotlinx-json:2.0.2"
+    implementation "io.ktor:ktor-server-content-negotiation:2.0.2"
+
+//    ktor html
+    implementation "io.ktor:ktor-server-html-builder:2.0.2"
+
+//    lockback
+    implementation 'ch.qos.logback:logback-classic:1.2.11'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = '1.8'
+}
+
+compileTestKotlin {
+    kotlinOptions.jvmTarget = '1.8'
+}
